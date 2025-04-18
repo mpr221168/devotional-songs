@@ -1,38 +1,38 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="te">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>My Telugu Devotional Songs</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>Telugu Devotional Songs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <h1>My Telugu Devotional Songs</h1>
-        <nav>
-            <a href="index.html">All Songs</a> |
-            <a href="media.html">Audio & Video</a>
-        </nav>
-    </header>
-    <main>
-        <h2>Home</h2>
-        <p>Welcome to the collection of Telugu Christian devotional songs. Use the search bar above to find your favorite songs by title.</p>
+  <div class="top-bar">
+    <button onclick="decreaseFont()">➖ A</button>
+    <button onclick="increaseFont()">➕ A</button>
+    <button onclick="toggleTheme()">🌞 / 🌙</button>
+  </div>
 
-        <input type="text" id="searchBar" placeholder="Search..." onkeyup="searchSongs()">
+  <div class="container">
+    <div class="left-column">
+      <ul id="songList">
+        <li onclick="loadSong('song1')">అగ్ని మండించు</li>
+        <li onclick="loadSong('song2')">నీవు నాతో ఉన్నావా</li>
+        <li onclick="loadSong('song3')">యేసు నా ప్రాణము</li>
+      </ul>
+    </div>
+    <div class="right-column">
+      <div id="songDisplay">
+        <h2>స్వాగతం!</h2>
+        <p>ఇక్కడ పాటలను ఎంచుకుని వీక్షించండి.</p>
+      </div>
+      <div class="media-links">
+        <a href="#" target="_blank" id="audioLink">🎵 Audio</a>
+        <a href="#" target="_blank" id="videoLink">🎥 Video</a>
+      </div>
+    </div>
+  </div>
 
-        <div id="songList">
-            <h3>A</h3>
-            <ul>
-                <li><a href="#">Aadivishshuv Nee Akkariki</a></li>
-                <li><a href="#">Aalayamulo Rajililaali</a></li>
-                <li><a href="#">Aalochinchu</a></li>
-                <li><a href="అగ్ని మండించు.html">అగ్ని మండించు</a></li>
-
-            </ul>
-        </div>
-    </main>
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
