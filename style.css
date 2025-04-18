@@ -1,0 +1,59 @@
+
+body {
+  font-family: 'Noto Sans Telugu', sans-serif;
+  margin: 0;
+  transition: background 0.3s, color 0.3s;
+}
+.container {
+  display: flex;
+  height: 100vh;
+}
+.left-column {
+  width: 30%;
+  background: #f4f4f4;
+  padding: 20px;
+  overflow-y: auto;
+  border-right: 1px solid #ccc;
+}
+.right-column {
+  width: 70%;
+  padding: 20px;
+  overflow-y: auto;
+  font-size: 16px;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+ul li {
+  margin: 10px 0;
+  cursor: pointer;
+  color: #0077cc;
+}
+ul li:hover {
+  text-decoration: underline;
+}
+.top-bar {
+  padding: 10px;
+  background: #ddd;
+  text-align: right;
+}
+.top-bar button {
+  margin-left: 5px;
+}
+.media-links {
+  margin-top: 20px;
+}
+.media-links a {
+  margin-right: 15px;
+  font-size: 18px;
+  text-decoration: none;
+  color: #0077cc;
+}
+.dark-mode {
+  background: #121212;
+  color: #e0e0e0;
+}
+.dark-mode .left-column {
+  background: #1e1e1e;
+}
