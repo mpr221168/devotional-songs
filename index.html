@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="te">
+<head>
+  <meta charset="UTF-8">
+  <title>Telugu Devotional Songs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="top-bar">
+    <button onclick="decreaseFont()">➖ A</button>
+    <button onclick="increaseFont()">➕ A</button>
+    <button onclick="toggleTheme()">🌞 / 🌙</button>
+  </div>
+
+  <div class="container">
+    <div class="left-column">
+      <ul id="songList">
+        <li onclick="loadSong('songs/agnimandinchu.html', 'https://example.com/audio1', 'https://example.com/video1')">అగ్ని మండించు</li>
+        <li onclick="loadSong('songs/neeatho.html', 'https://example.com/audio2', 'https://example.com/video2')">నీవు నాతో ఉన్నావా</li>
+      </ul>
+    </div>
+    <div class="right-column">
+      <div id="songDisplay">
+        <h2>స్వాగతం!</h2>
+        <p>ఇక్కడ పాటలను ఎంచుకుని వీక్షించండి.</p>
+      </div>
+      <div class="media-links">
+        <a href="#" target="_blank" id="audioLink">🎵 Audio</a>
+        <a href="#" target="_blank" id="videoLink">🎥 Video</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
